@@ -9,7 +9,7 @@ trigger:
 pool:
   name: Default
   demands: 
-  - agent.name -equals azureagent1
+  - Agent.Name -equals azureagent1
 
 steps:
 - task: Maven@3
