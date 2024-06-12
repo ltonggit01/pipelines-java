@@ -28,4 +28,4 @@ steps:
     serviceConnectionEndpoint: 'snyktest'
     testType: 'app'
     monitorWhen: 'always'
-    failOnIssues: false
+    failOnIssues: true
