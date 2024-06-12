@@ -22,9 +22,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'snyktest'
-    testType: 'code'
+    testType: 'app'
+    monitorWhen: 'always'
     failOnIssues: true
-    projectName: 'snyktesting'
